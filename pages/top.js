@@ -30,5 +30,6 @@ export async function getStaticProps() {
     props: {
       movies: JSON.parse(JSON.stringify(movies)),
     },
+    revalidate: 1,
   };
 }
